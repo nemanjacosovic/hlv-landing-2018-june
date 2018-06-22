@@ -556,51 +556,94 @@ body {
 
 /* Block G */
 #hlv-block-g {
-    background: #4d4d4d;
+    /*background: #FFFFFF;*/
 }
     #hlv-block-g .hlv-block {}
         #hlv-block-g .hlv-block-content {}
             #hlv-block-g p {
-                color: #FFFFFF;
-                font-size: 24px;
-                font-weight: 200;
-                line-height: 50px;
+                color: #767676;
+                font-size: 16px;
+                line-height: 44px;
                 text-align: center;
                 text-transform: uppercase;
-                font-family: 'Oswald', sans-serif;
-            }
-            #hlv-block-g .hlv-block a {
-                display: inline-block;
-                vertical-align: -8px;
-                margin: 0 0 0 100px;
-                transform: translateX(-40px);
             }
 /* /Block G */
 
 /* Block H */
 #hlv-block-h {
-    display: none;
+    /*background: #f2f2f2;*/
+    position: relative;
 }
+    #hlv-block-h:before {
+        content: '';
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 50%;
+        position: absolute;
+        background: #b3b3b3;
+    }
     #hlv-block-h .hlv-block {}
         #hlv-block-h .hlv-block-content {}
             #hlv-block-h .hlv-block-content-split {}
-                #hlv-block-h .hlv-block-content-split-left {}
-                    #hlv-block-h .hlv-block-content-split-left p {}
-                #hlv-block-h .hlv-block-content-split-right {}
-                    #hlv-block-h .hlv-block-content-split-right h3 {}
-                        #hlv-block-h .hlv-block-content-split-right h3 span {}
-                        #hlv-block-h .hlv-block-content-split-right a {}
+                #hlv-block-h .hlv-block-content-split-left {
+                    z-index: 3;
+                    position: relative;
+                    padding: 50px 0 0 15px;
+                }
+                    #hlv-block-h .hlv-block-content-split-left p {
+                        color: #767676;
+                        font-size: 26px;
+                        padding: 0 32px 0 0;
+                        line-height: 1.175em;
+                        text-transform: uppercase;
+                        font-family: 'Oswald', sans-serif;
+                    }
+                        #hlv-block-h .hlv-block-content-split-left p strong {
+                            font-weight: 400;
+                        }
+                #hlv-block-h .hlv-block-content-split-right {
+                    position: relative;
+                    padding: 50px 0 52px 30px;
+                }
+                    #hlv-block-h .hlv-block-content-split-right h3 {
+                        color: #FFFFFF;
+                        font-size: 34px;
+                        padding: 0 0 38px 0;
+                    }
+                        #hlv-block-h .hlv-block-content-split-right h3 span {
+                            display: block;
+                        }
+                    #hlv-block-h .hlv-block-content-split-right a {}
 /* /Block H */
 
 /* Block I */
 #hlv-block-i {
-    display: none;
+    background: #FFFFFF;
 }
     #hlv-block-i .hlv-block {}
-        #hlv-block-i .hlv-block-content {}
-            #hlv-block-i h3 {}
-            #hlv-block-i p {}
-                #hlv-block-i p strong {}
+        #hlv-block-i .hlv-block-content {
+            padding: 50px 0 51px 15px;
+        }
+            #hlv-block-i h3 {
+                color: #479d45;
+                font-size: 34px;
+                font-weight: 400;
+                padding: 0 0 27px 0;
+            }
+                #hlv-block-i h3 span {
+                    display: block;
+                    font-weight: 200;
+                }
+                #hlv-block-i p {
+                    color: #767676;
+                    font-size: 16px;
+                    line-height: 1.2em;
+                }
+                    #hlv-block-i p:last-child {
+                        padding: 15px 0 0 0;
+                    }
+                    #hlv-block-i p strong {}
 /* /Block I */
 
 /* Block J */
