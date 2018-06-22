@@ -217,51 +217,51 @@ body {
         background: url("../img/hlv-bg-block-a-matori-dev.png") top center no-repeat;
         background-size: 338px 617px;
     }
-    #hlv-block-a .hlv-block-content {
-        width: 47.5%;
-        float: right;
-        margin: 156px 0 0 0;
-    }
-    #hlv-block-a h1 {
-        margin: 0;
-        padding: 0;
-        height: 26px;
-        width: 200px;
-        text-indent: -9999px;
-        background: url("../img/hlv-hor-logo-white.png") top center no-repeat;
-        background-size: 200px;
-    }
-    #hlv-block-a h2 {
-        width: 300px;
-        color: #FFFFFF;
-        line-height: 40px;
-        margin: 30px 0 0 0;
-    }
-    #hlv-block-a p {
-        width: 370px;
-        color: #FFFFFF;
-        font-size: 16px;
-        margin: 20px 0 0 0;
-        line-height: 1.15em;
-    }
-        #hlv-block-a strong {
-            display: block;
+    #hlv-block-a .hlv-block {}
+        #hlv-block-a .hlv-block-content {
+            width: 47.5%;
+            float: right;
+            margin: 156px 0 0 0;
         }
-    #hlv-block-a h3 {
-        color: #FFFFFF;
-        font-size: 18px;
-        font-weight: 400;
-        margin: 56px 0 0 0;
-        letter-spacing: 0.01em;
-    }
-    #hlv-block-a a.hlv-btn-primary {
-        margin: 20px 0 0 0;
-    }
+            #hlv-block-a h1 {
+                margin: 0;
+                padding: 0;
+                height: 26px;
+                width: 200px;
+                text-indent: -9999px;
+                background: url("../img/hlv-hor-logo-white.png") top center no-repeat;
+                background-size: 200px;
+            }
+            #hlv-block-a h2 {
+                width: 300px;
+                color: #FFFFFF;
+                line-height: 40px;
+                margin: 30px 0 0 0;
+            }
+            #hlv-block-a p {
+                width: 370px;
+                color: #FFFFFF;
+                font-size: 16px;
+                margin: 20px 0 0 0;
+                line-height: 1.15em;
+            }
+                #hlv-block-a strong {
+                    display: block;
+                }
+            #hlv-block-a h3 {
+                color: #FFFFFF;
+                font-size: 18px;
+                font-weight: 400;
+                margin: 56px 0 0 0;
+                letter-spacing: 0.01em;
+            }
+            #hlv-block-a a.hlv-btn-primary {
+                margin: 20px 0 0 0;
+            }
 /* /Block A */
 
 /* Block B */
 #hlv-block-b {
-    /*height: 398px;*/
     position: relative;
     background: #479d45;
 }
@@ -277,27 +277,28 @@ body {
         background: url("../img/hlv-bg-block-b.png") top center no-repeat;
         background-size: 332px 328px;
     }
-    #hlv-block-b .hlv-block-content {
-        width: 47.5%;
-        float: right;
-        margin: 29px 0 0 0;
-    }
-    #hlv-block-b h2 {
-        color: #FFFFFF;
-        line-height: 1.2em;
-    }
-        #hlv-block-b h2 span {
-            display: block;
+    #hlv-block-b .hlv-block {}
+        #hlv-block-b .hlv-block-content {
+            width: 47.5%;
+            float: right;
+            margin: 29px 0 0 0;
         }
-    #hlv-block-b p {
-        width: 370px;
-        color: #FFFFFF;
-        margin: 47px 0 0 0;
-        line-height: 1.2em;
-    }
-        #hlv-block-b p:last-child {
-            margin: 25px 0 46px 0;
+        #hlv-block-b h2 {
+            color: #FFFFFF;
+            line-height: 1.2em;
         }
+            #hlv-block-b h2 span {
+                display: block;
+            }
+        #hlv-block-b p {
+            width: 370px;
+            color: #FFFFFF;
+            margin: 47px 0 0 0;
+            line-height: 1.2em;
+        }
+            #hlv-block-b p:last-child {
+                margin: 25px 0 46px 0;
+            }
 /* /Block B */
 
 /* Block C */
@@ -441,7 +442,6 @@ body {
                 margin: 0 0 0 100px;
                 transform: translateX(-40px);
             }
-
 /* /Block D */
 
 /* Block E */
@@ -453,6 +453,8 @@ body {
     -o-background-size: cover;
     background-size: cover;
 }
+    #hlv-block-e .hlv-block {}
+        #hlv-block-e .hlv-block-content {}
 /* /Block E */
 
 /* Block F */
@@ -463,150 +465,182 @@ body {
         #hlv-block-f .hlv-block-content {
             padding: 100px 0 0 0;
         }
-    #hlv-block-f .hlv-block-content-split-left {
-        position: relative;
-        padding: 0 20px 76px 170px;
-    }
-        #hlv-block-f .hlv-block-content-split-left:before {
-            top: -12px;
-            left: -46px;
-            content: '';
-            width: 203px;
-            height: 292px;
-            position: absolute;
-            background: url("../img/hlv-bg-block-f.png");
-            -webkit-background-size: auto 292px;
-            background-size: 203px 292px;
-        }
-        #hlv-block-f .hlv-block-content-split-left h2 {
-            color: #479d45;
-            font-weight: 400;
-        }
-        #hlv-block-f .hlv-block-content-split-left p {
-            width: 94%;
-            color: #767676;
-            font-size: 16px;
-            line-height: 1.2em;
-            margin: 20px 0 0 0;
-        }
-            #hlv-block-f .hlv-block-content-split-left p strong {}
-
-    #hlv-block-f .hlv-block-content-split-right {}
-        #hlv-block-f .hlv-block-content-split-right h2 {
-            color: #479d45;
-            margin: 0 0 20px 0;
-        }
-            #hlv-block-f .hlv-block-content-split-right h2 span {
-                font-weight: 400;
-            }
-        #hlv-block-f .hlv-block-content-split-right ul {
-            margin: 20px 0 0 0;
-        }
-            #hlv-block-f .hlv-block-content-split-right li {
-                overflow: auto;
-                padding: 0 0 35px 0;
-            }
-                #hlv-block-f .hlv-block-content-split-right li span {
-                    -webkit-border-radius: 72px;
-                    -moz-border-radius: 72px;
-                    border-radius: 72px;
-                    float: left;
-                    width: 72px;
-                    height: 72px;
-                    display: block;
-                    margin: 0 5px 0 0;
+            #hlv-block-f .hlv-block-content-split {}
+                #hlv-block-f .hlv-block-content-split-left {
+                    position: relative;
+                    padding: 0 20px 76px 170px;
                 }
-                #hlv-block-f .hlv-block-content-split-right li h5 {
-                    color: #767676;
-                    font-size: 18px;
-                }
-                    #hlv-block-f .hlv-block-content-split-right li h5 small {
-                        display: block;
-                        color: #99c582;
-                        padding: 4px 0 0 0;
+                    #hlv-block-f .hlv-block-content-split-left:before {
+                        top: -12px;
+                        left: -46px;
+                        content: '';
+                        width: 203px;
+                        height: 292px;
+                        position: absolute;
+                        background: url("../img/hlv-bg-block-f.png");
+                        -webkit-background-size: auto 292px;
+                        background-size: 203px 292px;
                     }
-                #hlv-block-f .hlv-block-content-split-right li p {
-                    color: #767676;
-                    font-size: 13px;
-                    line-height: 1.2em;
-                    padding: 0 40px 0 0;
-                }
-            /* UNIBET */
-            #hlv-unibet-markov {}
-                #hlv-unibet-markov span {
-                    background: url("../img/hooloovoo-unibet-marko-kovacevic.png") top center no-repeat;
-                    -webkit-background-size: cover;
-                    -moz-background-size: cover;
-                    -o-background-size: cover;
-                    background-size: cover;
-                }
-            #hlv-unibet-brajov {}
-                #hlv-unibet-brajov span {
-                    background: url("../img/hooloovoo-unibet-branko-jovicic.png") top center no-repeat;
-                    -webkit-background-size: cover;
-                    -moz-background-size: cover;
-                    -o-background-size: cover;
-                    background-size: cover;
-                }
-            /* /UNIBET */
-    #hlv-block-f-subtitle {
-        display: none;
-    }
-        #hlv-block-f-subtitle p {}
+                    #hlv-block-f .hlv-block-content-split-left h2 {
+                        color: #479d45;
+                        font-weight: 400;
+                    }
+                    #hlv-block-f .hlv-block-content-split-left p {
+                        width: 94%;
+                        color: #767676;
+                        font-size: 16px;
+                        line-height: 1.2em;
+                        margin: 20px 0 0 0;
+                    }
+                        #hlv-block-f .hlv-block-content-split-left p strong {}
+
+                #hlv-block-f .hlv-block-content-split-right {}
+                    #hlv-block-f .hlv-block-content-split-right h2 {
+                        color: #479d45;
+                        margin: 0 0 20px 0;
+                    }
+                        #hlv-block-f .hlv-block-content-split-right h2 span {
+                            font-weight: 400;
+                        }
+                    #hlv-block-f .hlv-block-content-split-right ul {
+                        margin: 20px 0 0 0;
+                    }
+                        #hlv-block-f .hlv-block-content-split-right li {
+                            overflow: auto;
+                            padding: 0 0 35px 0;
+                        }
+                            #hlv-block-f .hlv-block-content-split-right li span {
+                                -webkit-border-radius: 72px;
+                                -moz-border-radius: 72px;
+                                border-radius: 72px;
+                                float: left;
+                                width: 72px;
+                                height: 72px;
+                                display: block;
+                                margin: 0 5px 0 0;
+                            }
+                            #hlv-block-f .hlv-block-content-split-right li h5 {
+                                color: #767676;
+                                font-size: 18px;
+                            }
+                                #hlv-block-f .hlv-block-content-split-right li h5 small {
+                                    display: block;
+                                    color: #99c582;
+                                    padding: 4px 0 0 0;
+                                }
+                            #hlv-block-f .hlv-block-content-split-right li p {
+                                color: #767676;
+                                font-size: 13px;
+                                line-height: 1.2em;
+                                padding: 0 40px 0 0;
+                            }
+                        /* UNIBET */
+                        #hlv-unibet-markov {}
+                            #hlv-unibet-markov span {
+                                background: url("../img/hooloovoo-unibet-marko-kovacevic.png") top center no-repeat;
+                                -webkit-background-size: cover;
+                                -moz-background-size: cover;
+                                -o-background-size: cover;
+                                background-size: cover;
+                            }
+                        #hlv-unibet-brajov {}
+                            #hlv-unibet-brajov span {
+                                background: url("../img/hooloovoo-unibet-branko-jovicic.png") top center no-repeat;
+                                -webkit-background-size: cover;
+                                -moz-background-size: cover;
+                                -o-background-size: cover;
+                                background-size: cover;
+                            }
+                        /* /UNIBET */
 /* /Block F */
 
 /* Block G */
 #hlv-block-g {
-    display: none;
+    background: #4d4d4d;
 }
-    #hlv-block-g .hlv-block-content-split-left {}
-        #hlv-block-g .hlv-block-content-split-left p {}
-    #hlv-block-g .hlv-block-content-split-right {}
-        #hlv-block-g .hlv-block-content-split-right h3 {}
-            #hlv-block-g .hlv-block-content-split-right h3 span {}
-            #hlv-block-g .hlv-block-content-split-right a {}
+    #hlv-block-g .hlv-block {}
+        #hlv-block-g .hlv-block-content {}
+            #hlv-block-g p {
+                color: #FFFFFF;
+                font-size: 24px;
+                font-weight: 200;
+                line-height: 50px;
+                text-align: center;
+                text-transform: uppercase;
+                font-family: 'Oswald', sans-serif;
+            }
+            #hlv-block-g .hlv-block a {
+                display: inline-block;
+                vertical-align: -8px;
+                margin: 0 0 0 100px;
+                transform: translateX(-40px);
+            }
 /* /Block G */
 
 /* Block H */
 #hlv-block-h {
     display: none;
 }
-    #hlv-block-h h3 {}
-    #hlv-block-h p {}
-        #hlv-block-h p strong {}
+    #hlv-block-h .hlv-block {}
+        #hlv-block-h .hlv-block-content {}
+            #hlv-block-h .hlv-block-content-split {}
+                #hlv-block-h .hlv-block-content-split-left {}
+                    #hlv-block-h .hlv-block-content-split-left p {}
+                #hlv-block-h .hlv-block-content-split-right {}
+                    #hlv-block-h .hlv-block-content-split-right h3 {}
+                        #hlv-block-h .hlv-block-content-split-right h3 span {}
+                        #hlv-block-h .hlv-block-content-split-right a {}
 /* /Block H */
 
 /* Block I */
 #hlv-block-i {
     display: none;
 }
-    #hlv-block-i h3 {}
-    #hlv-block-i p {}
+    #hlv-block-i .hlv-block {}
+        #hlv-block-i .hlv-block-content {}
+            #hlv-block-i h3 {}
+            #hlv-block-i p {}
+                #hlv-block-i p strong {}
 /* /Block I */
 
 /* Block J */
 #hlv-block-j {
     display: none;
 }
-    #hlv-block-j ul {}
-        #hlv-block-j li {}
-            #hlv-block-j li span {}
-            #hlv-block-j li h5 {}
-            #hlv-block-j li p {}
+    #hlv-block-j .hlv-block {}
+        #hlv-block-j .hlv-block-content {}
+            #hlv-block-j h3 {}
+            #hlv-block-j p {}
 /* /Block J */
 
 /* Block K */
 #hlv-block-k {
     display: none;
 }
-    #hlv-block-k .hlv-block-content-split-left {}
-        #hlv-block-k .hlv-block-content-split-left p {}
-            #hlv-block-k .hlv-block-content-split-left p strong {}
-    #hlv-block-k .hlv-block-content-split-right {}
-        #hlv-block-k .hlv-block-content-split-right h2 {}
-            #hlv-block-k .hlv-block-content-split-right h2 small {}
-            #hlv-block-k .hlv-block-content-split-right a {}
+    #hlv-block-k .hlv-block {}
+        #hlv-block-k .hlv-block-content {}
+            #hlv-block-k ul {}
+                #hlv-block-k li {}
+                    #hlv-block-k li span {}
+                    #hlv-block-k li h5 {}
+                    #hlv-block-k li p {}
 /* /Block K */
+
+/* Block L */
+#hlv-block-l {
+    display: none;
+}
+    #hlv-block-l .hlv-block {}
+        #hlv-block-l .hlv-block-content {}
+            #hlv-block-l .hlv-block-content-split {}
+                #hlv-block-l .hlv-block-content-split-left {}
+                    #hlv-block-l .hlv-block-content-split-left p {}
+                        #hlv-block-l .hlv-block-content-split-left p strong {}
+                #hlv-block-l .hlv-block-content-split-right {}
+                    #hlv-block-l .hlv-block-content-split-right h2 {}
+                        #hlv-block-l .hlv-block-content-split-right h2 small {}
+                        #hlv-block-l .hlv-block-content-split-right a {}
+/* /Block L */
 /* /Layout blocks */
 
 
