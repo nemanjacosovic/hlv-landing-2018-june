@@ -1,0 +1,621 @@
+/*
+ *
+ *  Hooloovoo for InfoStud
+ *
+ */
+
+body {
+    background: indigo;
+}
+
+/* RESET */
+#hlv div, #hlv span, #hlv h1, #hlv h2, #hlv h3, #hlv h4, #hlv h5, #hlv h6,
+#hlv p, #hlv a, #hlv em, #hlv img, #hlv small, #hlv strong, #hlv ul, #hlv li
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+#hlv ol, #hlv ul {
+    list-style: none;
+}
+/* /RESET */
+
+/* General CSS */
+/* Matori ne voli browsere koji su stariji od njega */
+#hlv-dinosaur-browser {
+    color: #000;
+    margin: 0.2em 0;
+    background: #ccc;
+    padding: 0.2em 0;
+}
+
+#hlv {
+    width: 1190px;
+    margin: 0 auto;
+    line-height: 1;
+    padding-bottom: 4186px;
+    background: url("../img/temp-1190.jpg") top center no-repeat;
+}
+
+    #hlv h1, #hlv h2, #hlv h3, #hlv h4, #hlv h5, #hlv h6 {
+        font-weight: 200;
+        text-transform: uppercase;
+        font-family: 'Oswald', sans-serif;
+    }
+        #hlv h1 span, #hlv h2 span, #hlv h3 span, #hlv h4 span, #hlv h5 span, #hlv h6 span {
+            font-weight: 400;
+        }
+
+    #hlv h2 {
+        font-size: 34px;
+    }
+
+    #hlv p {
+        font-weight: 300;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+        #hlv p strong {
+            font-weight: 700;
+        }
+/* /General CSS */
+
+
+
+/* Common */
+#hlv div.hlv-block {
+    width: 840px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+    #hlv .hlv-block-content-split {
+        font-size: 0;
+        margin: 0 auto;
+    }
+        #hlv .hlv-block-content-split-left {
+            width: 50%;
+            padding: 0 0 0 15px;
+            vertical-align: top;
+            display: inline-block;
+            box-sizing: border-box;
+        }
+        #hlv .hlv-block-content-split-right {
+            width: 50%;
+            padding: 0 0 0 30px;
+            vertical-align: top;
+            display: inline-block;
+            box-sizing: border-box;
+        }
+
+#hlv a.hlv-btn-primary {
+    -webkit-transition: all 320ms ease-in-out;
+    -moz-transition: all 320ms ease-in-out;
+    -o-transition: all 320ms ease-in-out;
+    transition: all 320ms ease-in-out;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    display: block;
+    width: 162px;
+    height: 36px;
+    color: #FFFFFF;
+    font-size: 20px;
+    overflow: hidden;
+    line-height: 36px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    background: url("../img/hlv-bg-btn-primary-whover.png") top right repeat-y #479d45;
+}
+    #hlv a.hlv-btn-primary:hover {
+        color: #479d45;
+        background: url("../img/hlv-bg-btn-primary-whover.png") top left repeat-y #479d45;
+    }
+    /*#hlv a.hlv-btn-primary:active {*/
+        /*box-shadow: inset 0 0 10px #479d45;*/
+    /*}*/
+        #hlv a.hlv-btn-primary:after,
+        #hlv a.hlv-btn-primary:before {
+            top: 50%;
+            z-index: 120;
+            content: '';
+            right: 13px;
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            background: #479d45;
+            margin: -5px -35px 0 0;
+            transition-property: transform;
+            transition-duration: .45s;
+            transition-timing-function: ease-in-out;
+        }
+        #hlv a.hlv-btn-primary:before {
+            opacity: 0;
+            z-index: 130;
+            background: #FFFFFF;
+        }
+            #hlv a.hlv-btn-primary:hover:after {
+                transform: translateX(-35px) rotate(450deg);
+                box-shadow: 0 0 0 rgba(71, 157, 69, 0.7);
+                animation: ripple 2s infinite;
+                animation-delay: 1s;
+            }
+            #hlv a.hlv-btn-primary:hover:before {
+                margin-right: 0;
+                animation: pop 2s infinite;
+                animation-delay: 1s;
+            }
+
+                @keyframes ripple {
+                    10% {
+                        box-shadow: 0 0 0 0 rgba(71, 157, 69, 0.7);
+                    }
+                    35% {
+                        box-shadow: 0 0 0 11px rgba(71, 157, 69, 0);
+                    }
+                    40% {
+                        box-shadow: 0 0 0 0 rgba(71, 157, 69, 0);
+                    }
+                    50% {}
+                    100% {}
+                }
+                @keyframes pop {
+                    1% {
+                        opacity: 1;
+                        transform: scale(0.1);
+                    }
+                    0% {
+                        opacity: 1;
+                        transform: scale(0.8);
+                    }
+                    10% {
+                        opacity: 1;
+                        transform: scale(1);
+                    }
+                    10.1% {
+                        opacity: 0;
+                    }
+                    100% {
+                        opacity: 0;
+                        transform: scale(0.1);
+                    }
+                }
+/* /Common */
+
+
+
+/* Layout blocks */
+#hlv-block-a, #hlv-block-b, #hlv-block-c, #hlv-block-d,
+#hlv-block-e, #hlv-block-f, #hlv-block-g, #hlv-block-h,
+#hlv-block-i, #hlv-block-j, #hlv-block-k {
+    overflow: auto;
+}
+/* Block A */
+#hlv-block-a {
+    height: 680px;
+    position: relative;
+    background: url("../img/hlv-bg-block-a.jpg") top center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+    #hlv-block-a:after {
+        left: 50%;
+        bottom: 0;
+        height: 617px;
+        width: 338px;
+        content: '';
+        margin-left: -400px;
+        display: block;
+        position: absolute;
+        background: url("../img/hlv-bg-block-a-matori-dev.png") top center no-repeat;
+        background-size: 338px 617px;
+    }
+    #hlv-block-a .hlv-block-content {
+        width: 47.5%;
+        float: right;
+        margin: 156px 0 0 0;
+    }
+    #hlv-block-a h1 {
+        margin: 0;
+        padding: 0;
+        height: 26px;
+        width: 200px;
+        text-indent: -9999px;
+        background: url("../img/hlv-hor-logo-white.png") top center no-repeat;
+        background-size: 200px;
+    }
+    #hlv-block-a h2 {
+        width: 300px;
+        color: #FFFFFF;
+        line-height: 40px;
+        margin: 30px 0 0 0;
+    }
+    #hlv-block-a p {
+        width: 370px;
+        color: #FFFFFF;
+        font-size: 16px;
+        margin: 20px 0 0 0;
+        line-height: 1.15em;
+    }
+        #hlv-block-a strong {
+            display: block;
+        }
+    #hlv-block-a h3 {
+        color: #FFFFFF;
+        font-size: 18px;
+        font-weight: 400;
+        margin: 56px 0 0 0;
+        letter-spacing: 0.01em;
+    }
+    #hlv-block-a a.hlv-btn-primary {
+        margin: 20px 0 0 0;
+    }
+/* /Block A */
+
+/* Block B */
+#hlv-block-b {
+    /*height: 398px;*/
+    position: relative;
+    background: #479d45;
+}
+    #hlv-block-b:after {
+        left: 50%;
+        bottom: 34px;
+        height: 328px;
+        width: 332px;
+        content: '';
+        margin-left: -381px;
+        display: block;
+        position: absolute;
+        background: url("../img/hlv-bg-block-b.png") top center no-repeat;
+        background-size: 332px 328px;
+    }
+    #hlv-block-b .hlv-block-content {
+        width: 47.5%;
+        float: right;
+        margin: 29px 0 0 0;
+    }
+    #hlv-block-b h2 {
+        color: #FFFFFF;
+        line-height: 1.2em;
+    }
+        #hlv-block-b h2 span {
+            display: block;
+        }
+    #hlv-block-b p {
+        width: 370px;
+        color: #FFFFFF;
+        margin: 47px 0 0 0;
+        line-height: 1.2em;
+    }
+        #hlv-block-b p:last-child {
+            margin: 25px 0 46px 0;
+        }
+/* /Block B */
+
+/* Block C */
+#hlv-block-c {
+    /*height: 626px;*/
+    overflow: auto;
+    background: #666666;
+}
+    #hlv-block-c .hlv-block {}
+        #hlv-block-c .hlv-block-content {
+            padding: 96px 0 66px 0;
+        }
+        #hlv-block-c .hlv-block-content-split {}
+            #hlv-block-c .hlv-block-content-split-left {}
+                #hlv-block-c .hlv-block-content-split-left h2 {
+                    color: #FFFFFF;
+                    margin: 0 0 26px 0;
+                    position: relative;
+                    background: #479d45;
+                    padding: 2px 0 3px 0;
+                }
+                    #hlv-block-c .hlv-block-content-split-left h2:before {
+                        top: 0;
+                        bottom: 0;
+                        left: calc(50%*-1);
+                        right: 100%;
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        background: #479d45;
+                    }
+                    #hlv-block-c .hlv-block-content-split-left h2 span {
+                        font-weight: 400;
+                    }
+                #hlv-block-c .hlv-block-content-split-left p {
+                    width: 94%;
+                    color: #FFFFFF;
+                    font-size: 16px;
+                    line-height: 1.2em;
+                    margin: 17px 0 0 0;
+                }
+                    #hlv-block-c .hlv-block-content-split-left p strong {
+                        font-weight: 400;
+                    }
+
+            #hlv-block-c .hlv-block-content-split-right {}
+                #hlv-block-c .hlv-block-content-split-right h2 {
+                    color: #FFFFFF;
+                    padding: 2px 0 0 0;
+                    margin: 0 0 20px 0;
+                }
+                    #hlv-block-c .hlv-block-content-split-right h2 span {
+                        font-weight: 400;
+                    }
+                #hlv-block-c .hlv-block-content-split-right > p {
+                    color: #FFFFFF;
+                    font-size: 16px;
+                }
+                #hlv-block-c .hlv-block-content-split-right ul {
+                    margin: 20px 0 0 0;
+                }
+                    #hlv-block-c .hlv-block-content-split-right li {
+                        overflow: auto;
+                        padding: 0 0 35px 0;
+                    }
+                        #hlv-block-c .hlv-block-content-split-right li span {
+                            -webkit-border-radius: 72px;
+                            -moz-border-radius: 72px;
+                            border-radius: 72px;
+                            float: left;
+                            width: 72px;
+                            height: 72px;
+                            display: block;
+                            margin: 0 5px 0 0;
+                        }
+                        #hlv-block-c .hlv-block-content-split-right li h5 {
+                            color: #FFFFFF;
+                            font-size: 18px;
+                        }
+                            #hlv-block-c .hlv-block-content-split-right li h5 small {
+                                display: block;
+                                color: #99c582;
+                                padding: 4px 0 0 0;
+                            }
+                        #hlv-block-c .hlv-block-content-split-right li p {
+                            color: #FFFFFF;
+                            font-size: 13px;
+                            line-height: 1.2em;
+                            padding: 0 40px 0 0;
+                        }
+                            #hlv-block-c .hlv-block-content-split-right li p em {
+                                display: block;
+                                font-style: normal;
+                            }
+                    /* FEIS */
+                    #hlv-feis-darmak {}
+                        #hlv-feis-darmak span {
+                            background: url("../img/hooloovoo-feis-darko-maksimovic.png") top center no-repeat;
+                            -webkit-background-size: cover;
+                            -moz-background-size: cover;
+                            -o-background-size: cover;
+                            background-size: cover;
+                        }
+                    #hlv-feis-sreant {}
+                        #hlv-feis-sreant span {
+                            background: url("../img/hooloovoo-feis-sreten-antic.png") top center no-repeat;
+                            -webkit-background-size: cover;
+                            -moz-background-size: cover;
+                            -o-background-size: cover;
+                            background-size: cover;
+                        }
+                    #hlv-feis-tomtom {}
+                        #hlv-feis-tomtom span {
+                            background: url("../img/hooloovoo-feis-tomislav-tomcic.png") top center no-repeat;
+                            -webkit-background-size: cover;
+                            -moz-background-size: cover;
+                            -o-background-size: cover;
+                            background-size: cover;
+                        }
+                    /* /FEIS */
+/* /Block C */
+
+/* Block D */
+#hlv-block-d {
+    background: #4d4d4d;
+}
+    #hlv-block-d .hlv-block {}
+        #hlv-block-d .hlv-block-content {}
+            #hlv-block-d p {
+                color: #FFFFFF;
+                font-size: 24px;
+                font-weight: 200;
+                line-height: 50px;
+                text-align: center;
+                text-transform: uppercase;
+                font-family: 'Oswald', sans-serif;
+            }
+            #hlv-block-d .hlv-block a {
+                display: inline-block;
+                vertical-align: -8px;
+                margin: 0 0 0 100px;
+                transform: translateX(-40px);
+            }
+
+/* /Block D */
+
+/* Block E */
+#hlv-block-e {
+    height: 656px;
+    background: url("../img/hlv-bg-block-e.jpg") top center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+/* /Block E */
+
+/* Block F */
+#hlv-block-f {
+    background: #e6e6e6;
+}
+    #hlv-block-f .hlv-block {}
+        #hlv-block-f .hlv-block-content {
+            padding: 100px 0 0 0;
+        }
+    #hlv-block-f .hlv-block-content-split-left {
+        position: relative;
+        padding: 0 20px 76px 170px;
+    }
+        #hlv-block-f .hlv-block-content-split-left:before {
+            top: -12px;
+            left: -46px;
+            content: '';
+            width: 203px;
+            height: 292px;
+            position: absolute;
+            background: url("../img/hlv-bg-block-f.png");
+            -webkit-background-size: auto 292px;
+            background-size: 203px 292px;
+        }
+        #hlv-block-f .hlv-block-content-split-left h2 {
+            color: #479d45;
+            font-weight: 400;
+        }
+        #hlv-block-f .hlv-block-content-split-left p {
+            width: 94%;
+            color: #767676;
+            font-size: 16px;
+            line-height: 1.2em;
+            margin: 20px 0 0 0;
+        }
+            #hlv-block-f .hlv-block-content-split-left p strong {}
+
+    #hlv-block-f .hlv-block-content-split-right {}
+        #hlv-block-f .hlv-block-content-split-right h2 {
+            color: #479d45;
+            margin: 0 0 20px 0;
+        }
+            #hlv-block-f .hlv-block-content-split-right h2 span {
+                font-weight: 400;
+            }
+        #hlv-block-f .hlv-block-content-split-right ul {
+            margin: 20px 0 0 0;
+        }
+            #hlv-block-f .hlv-block-content-split-right li {
+                overflow: auto;
+                padding: 0 0 35px 0;
+            }
+                #hlv-block-f .hlv-block-content-split-right li span {
+                    -webkit-border-radius: 72px;
+                    -moz-border-radius: 72px;
+                    border-radius: 72px;
+                    float: left;
+                    width: 72px;
+                    height: 72px;
+                    display: block;
+                    margin: 0 5px 0 0;
+                }
+                #hlv-block-f .hlv-block-content-split-right li h5 {
+                    color: #767676;
+                    font-size: 18px;
+                }
+                    #hlv-block-f .hlv-block-content-split-right li h5 small {
+                        display: block;
+                        color: #99c582;
+                        padding: 4px 0 0 0;
+                    }
+                #hlv-block-f .hlv-block-content-split-right li p {
+                    color: #767676;
+                    font-size: 13px;
+                    line-height: 1.2em;
+                    padding: 0 40px 0 0;
+                }
+            /* UNIBET */
+            #hlv-unibet-markov {}
+                #hlv-unibet-markov span {
+                    background: url("../img/hooloovoo-unibet-marko-kovacevic.png") top center no-repeat;
+                    -webkit-background-size: cover;
+                    -moz-background-size: cover;
+                    -o-background-size: cover;
+                    background-size: cover;
+                }
+            #hlv-unibet-brajov {}
+                #hlv-unibet-brajov span {
+                    background: url("../img/hooloovoo-unibet-branko-jovicic.png") top center no-repeat;
+                    -webkit-background-size: cover;
+                    -moz-background-size: cover;
+                    -o-background-size: cover;
+                    background-size: cover;
+                }
+            /* /UNIBET */
+    #hlv-block-f-subtitle {
+        display: none;
+    }
+        #hlv-block-f-subtitle p {}
+/* /Block F */
+
+/* Block G */
+#hlv-block-g {
+    display: none;
+}
+    #hlv-block-g .hlv-block-content-split-left {}
+        #hlv-block-g .hlv-block-content-split-left p {}
+    #hlv-block-g .hlv-block-content-split-right {}
+        #hlv-block-g .hlv-block-content-split-right h3 {}
+            #hlv-block-g .hlv-block-content-split-right h3 span {}
+            #hlv-block-g .hlv-block-content-split-right a {}
+/* /Block G */
+
+/* Block H */
+#hlv-block-h {
+    display: none;
+}
+    #hlv-block-h h3 {}
+    #hlv-block-h p {}
+        #hlv-block-h p strong {}
+/* /Block H */
+
+/* Block I */
+#hlv-block-i {
+    display: none;
+}
+    #hlv-block-i h3 {}
+    #hlv-block-i p {}
+/* /Block I */
+
+/* Block J */
+#hlv-block-j {
+    display: none;
+}
+    #hlv-block-j ul {}
+        #hlv-block-j li {}
+            #hlv-block-j li span {}
+            #hlv-block-j li h5 {}
+            #hlv-block-j li p {}
+/* /Block J */
+
+/* Block K */
+#hlv-block-k {
+    display: none;
+}
+    #hlv-block-k .hlv-block-content-split-left {}
+        #hlv-block-k .hlv-block-content-split-left p {}
+            #hlv-block-k .hlv-block-content-split-left p strong {}
+    #hlv-block-k .hlv-block-content-split-right {}
+        #hlv-block-k .hlv-block-content-split-right h2 {}
+            #hlv-block-k .hlv-block-content-split-right h2 small {}
+            #hlv-block-k .hlv-block-content-split-right a {}
+/* /Block K */
+/* /Layout blocks */
+
+
+
+/* Responsive */
+@media only screen and (min-width: 1050px) {}
+/* /Responsive */
+
+/*
+ * When I wrote this, only God and I understood what I was doing
+ * Now, God only knows
+ */
