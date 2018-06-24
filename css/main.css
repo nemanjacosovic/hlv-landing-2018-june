@@ -917,7 +917,67 @@ body {
 
 
 /* Responsive */
-@media only screen and (min-width: 1050px) {}
+/* Mobile */
+	/*  240px/319px */
+	@media screen and (min-width: 240px) and (max-width: 319px) {}
+
+    /*  320px/359px */
+	@media screen and (min-width: 320px) and (max-width: 359px) {}
+
+	/*  360px/479px */
+	@media screen and (min-width: 360px) and (max-width: 479px) {}
+
+	/*  480px/539px */
+	@media screen and (min-width: 480px) and (max-width: 539px) {}
+
+    /*  540px/639px */
+	@media screen and (min-width: 540px) and (max-width: 639px) {}
+
+	/*  640px/719px */
+	@media screen and (min-width: 640px) and (max-width: 719px) {}
+
+	/*  720px/767px */
+	@media screen and (min-width: 720px) and (max-width: 767px) {}
+
+	/*  768px/959px */
+	@media screen and (min-width: 768px) and (max-width: 959px) {}
+
+/* /Mobile */
+/* Desktop */
+	/*  960px/1023px =  676px InfoStud break point */
+	@media screen and (min-width: 960px) and (max-width: 1023px) {}
+
+	/* 1024px/1049px =  724px */
+	@media screen and (min-width: 1024px) and (max-width: 1049px) {}
+
+	/* 1050px/1189px =  744px */
+	@media screen and (min-width: 1050px) and (max-width: 1189px) {}
+
+	/* 1190px/1199px =  849px */
+	@media screen and (min-width: 1190px) and (max-width: 1199px) {}
+
+	/* 1200px/1223px =  856px */
+	@media screen and (min-width: 1200px) and (max-width: 1223px) {}
+
+	/* 1224px/1439px =  857px */
+	@media screen and (min-width: 1224px) and (max-width: 1439px) {}
+
+	/* 1440px/1599px = 1019px */
+	@media screen and (min-width: 1440px) and (max-width: 1599px) {}
+
+	/* 1600px/1679px = 1140px */
+	@media screen and (min-width: 1600px) and (max-width: 1679px) {}
+
+	/* 1680px/1919px = 1191px */
+	@media screen and (min-width: 1680px) and (max-width: 1919px) {}
+
+	/* 1920px/2559px = 1191px */
+	@media screen and (min-width: 1920px) and (max-width: 2559px) {}
+
+	/* 2560px ... */
+	@media screen and (min-width: 2560px) {}
+
+/* /Desktop */
 /* /Responsive */
 
 /*
