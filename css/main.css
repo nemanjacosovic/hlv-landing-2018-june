@@ -335,7 +335,7 @@
                     #hlv-block-c .hlv-block-content-split-left h2:before {
                         top: 0;
                         bottom: 0;
-                        left: calc(50%*-1);
+                        left: -150%;
                         right: 100%;
                         content: '';
                         display: block;
@@ -3097,7 +3097,7 @@
 	/* 1680px is actually 1191px */
 	@media screen and (min-width: 1440px) {
 		#hlv {
-			width: 857px;
+			width: 100%;
 		}
 			#hlv div.hlv-block {
 				width: 840px;
