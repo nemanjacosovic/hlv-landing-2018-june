@@ -1398,6 +1398,11 @@
 		/* Block E */
 		#hlv-block-e {
 			height: 210px;
+			background: url("../img/hlv-bg-block-e-mobile.jpg") top center no-repeat;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
 		}
 			#hlv-block-e .hlv-block {}
 				#hlv-block-e .hlv-block-content {}
