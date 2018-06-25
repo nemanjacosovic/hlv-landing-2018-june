@@ -257,19 +257,39 @@
     position: relative;
     background: #479d45;
 }
+	#hlv-block-b:before {
+		-webkit-transition: height 350ms ease-in-out;
+		-moz-transition: height 350ms ease-in-out;
+		-o-transition: height 350ms ease-in-out;
+		transition: height 350ms ease-in-out;
+		bottom: 0;
+		content: '';
+		z-index: 10;
+		height: 0;
+		width: 100%;
+		position: absolute;
+		background: #169f3e;
+	}
+		#hlv-block-b:hover:before {
+			height: 100%;
+		}
     #hlv-block-b:after {
         left: 50%;
-        bottom: 34px;
-        height: 328px;
-        width: 332px;
+		z-index: 20;
         content: '';
-        margin-left: -381px;
+        bottom: 34px;
+        width: 332px;
+        height: 328px;
         display: block;
         position: absolute;
+        margin-left: -381px;
         background: url("../img/hlv-bg-block-b.png") top center no-repeat;
         background-size: 332px 328px;
     }
-    #hlv-block-b .hlv-block {}
+    #hlv-block-b .hlv-block {
+		z-index: 100;
+		position: relative;
+	}
         #hlv-block-b .hlv-block-content {
             width: 47.5%;
             float: right;
@@ -372,59 +392,46 @@
 								-webkit-border-radius: 50%;
 								-moz-border-radius: 50%;
 								border-radius: 50%;
-								top: -2px;
-								left: -2px;
+								top: -3px;
+								left: -3px;
 								opacity: 0;
-								z-index: -1;
+								z-index: 10;
 								content: '';
 								width: 100%;
 								height: 100%;
 								position: absolute;
-								border-top: 2px solid #99c582;
-								border-right: 2px solid #479d45;
-								border-bottom: 2px solid #99c582;
-								border-left: 2px solid #479d45;
-								transform: rotate(45deg) scale(0.95);
+								transform: rotate(45deg);
+								border-top: 3px solid #99c582;
+								border-right: 3px solid #479d45;
+								border-bottom: 3px solid #99c582;
+								border-left: 3px solid #479d45;
+								transition: all 250ms ease-in-out;
 							}
 								#hlv-block-c:hover .hlv-block-content-split-right li span:before {
 									opacity: 1;
-									animation: hlv-rotate 10s infinite;
+									animation-delay: 550ms;
+                                    animation-duration: 10s;
+                                    animation-iteration-count: infinite;
 								}
-									@keyframes hlv-rotate {
-										0% {
-											transform: rotate(45deg);
-										}
-										10% {
-											transform: rotate(405deg);
-										}
-										20% {
-											transform: rotate(180deg);
-										}
-										30% {
-											transform: rotate(905deg);
-										}
-										100% {
-											transform: rotate(45deg);
-										}
-									}
 							#hlv-block-c .hlv-block-content-split-right li span:after {
 								-webkit-border-radius: 50%;
 								-moz-border-radius: 50%;
 								border-radius: 50%;
-								top: -2px;
-								left: -2px;
+								top: -3px;
+								left: -3px;
 								opacity: 0;
-								z-index: -1;
+								z-index: 20;
 								content: '';
 								width: 100%;
 								height: 100%;
 								position: absolute;
-								border: 2px dashed #479d45;
-								transform: rotate(45deg) scale(0.95);
+								transform: rotate(45deg);
+								border: 3px dashed #479d45;
 							}
 								#hlv-block-c:hover .hlv-block-content-split-right li span:after {
 									opacity: 1;
-									transform: scale(1);
+									transition: all 250ms ease-in-out;
+									transition-delay: 450ms;
 								}
                         #hlv-block-c .hlv-block-content-split-right li h5 {
                             color: #FFFFFF;
@@ -446,15 +453,78 @@
                                 font-style: normal;
                             }
                     /* FEIS */
-                    #hlv-feis-darmak {}
-                        #hlv-feis-darmak span {
-                            background: url("../img/hooloovoo-feis-darko-maksimovic.png") top center no-repeat;
-                            -webkit-background-size: cover;
-                            -moz-background-size: cover;
-                            -o-background-size: cover;
-                            background-size: cover;
-                        }
-                    #hlv-feis-sreant {}
+                    #hlv-feis-darmak {
+						position: relative;
+					}
+						#hlv-feis-darmak:after,
+						#hlv-feis-sreant:after {
+							-webkit-transition: height 250ms ease-in-out;
+							-moz-transition: height 250ms ease-in-out;
+							-o-transition: height 250ms ease-in-out;
+							transition: height 250ms ease-in-out;
+							top: 50%;
+							left: 36px;
+							width: 3px;
+							height: 0;
+							content: '';
+							position: absolute;
+							background: #479d45;
+						}
+						#hlv-feis-darmak:after {
+							transition-delay: 250ms;
+						}
+							#hlv-block-c:hover #hlv-feis-darmak:after,
+							#hlv-block-c:hover #hlv-feis-sreant:after {
+								height: 72px;
+								transition-delay: 0ms;
+							}
+						#hlv-feis-darmak span {
+							background: url("../img/hooloovoo-feis-darko-maksimovic.png") top center no-repeat;
+							-webkit-background-size: cover;
+							-moz-background-size: cover;
+							-o-background-size: cover;
+							background-size: cover;
+						}
+							#hlv-block-c #hlv-feis-darmak span:before {
+								transition-delay: 450ms;
+							}
+								#hlv-block-c:hover #hlv-feis-darmak span:before {
+									animation-name: hlv-roto-feis-one;
+									transition-delay: 0ms;
+								}
+								@keyframes hlv-roto-feis-one {
+									0% {
+										transform: rotate(45deg);
+									}
+									10% {
+										transform: rotate(405deg);
+									}
+									20% {
+										transform: rotate(-90deg);
+									}
+									50% {
+										transform: rotate(905deg);
+									}
+									90% {
+										transform: rotate(-45deg);
+									}
+									100% {
+										transform: rotate(45deg);
+									}
+								}
+							#hlv-block-c #hlv-feis-darmak span:after {
+								transition-delay: 450ms;
+							}
+								#hlv-block-c:hover #hlv-feis-darmak span:after {
+									transition-delay: 0ms;
+								}
+                    #hlv-feis-sreant {
+						position: relative;
+					}
+						#hlv-feis-sreant:after {}
+							#hlv-block-c:hover #hlv-feis-sreant:after {
+								transition-delay: 250ms;
+							}
                         #hlv-feis-sreant span {
                             background: url("../img/hooloovoo-feis-sreten-antic.png") top center no-repeat;
                             -webkit-background-size: cover;
@@ -462,14 +532,75 @@
                             -o-background-size: cover;
                             background-size: cover;
                         }
+							#hlv-block-c #hlv-feis-sreant span:before {
+								transition-delay: 220ms;
+							}
+								#hlv-block-c:hover #hlv-feis-sreant span:before {
+									animation-name: hlv-roto-feis-two;
+								}
+								@keyframes hlv-roto-feis-two {
+									0% {
+										transform: rotate(0deg);
+									}
+									20% {
+										transform: rotate(600deg);
+									}
+									40% {
+										transform: rotate(-180deg);
+									}
+									60% {
+										transform: rotate(905deg);
+									}
+									90% {
+										transform: rotate(-45deg);
+									}
+									100% {
+										transform: rotate(0deg);
+									}
+								}
+							#hlv-block-c #hlv-feis-sreant span:after {
+								transition-delay: 250ms;
+							}
+								#hlv-block-c:hover #hlv-feis-sreant span:after {
+									transition-delay: 250ms;
+								}
                     #hlv-feis-tomtom {}
-                        #hlv-feis-tomtom span {
-                            background: url("../img/hooloovoo-feis-tomislav-tomcic.png") top center no-repeat;
-                            -webkit-background-size: cover;
-                            -moz-background-size: cover;
-                            -o-background-size: cover;
-                            background-size: cover;
-                        }
+						#hlv-feis-tomtom:after {}
+							#hlv-block-c:hover #hlv-feis-tomtom:after {}
+						#hlv-feis-tomtom span {
+							background: url("../img/hooloovoo-feis-tomislav-tomcic.png") top center no-repeat;
+							-webkit-background-size: cover;
+							-moz-background-size: cover;
+							-o-background-size: cover;
+							background-size: cover;
+						}
+							#hlv-block-c #hlv-feis-tomtom span:before {
+								transition-delay: 0ms;
+							}
+								#hlv-block-c:hover #hlv-feis-tomtom span:before {
+									animation-name: hlv-roto-feis-three;
+									transition-delay: 450ms;
+								}
+								@keyframes hlv-roto-feis-three {
+									0% {
+										transform: rotate(-45deg);
+									}
+									15% {
+										transform: rotate(600deg);
+									}
+									20% {
+										transform: rotate(-90deg);
+									}
+									50% {
+										transform: rotate(905deg);
+									}
+									90% {
+										transform: rotate(-145deg);
+									}
+									100% {
+										transform: rotate(-45deg);
+									}
+								}
                     /* /FEIS */
 /* /Block C */
 
@@ -557,19 +688,66 @@
                         margin: 20px 0 0 0;
                     }
                         #hlv-block-f .hlv-block-content-split-right li {
-                            overflow: auto;
-                            padding: 0 0 35px 0;
+                            overflow: visible;
+                            padding: 0 0 50px 0;
                         }
                             #hlv-block-f .hlv-block-content-split-right li span {
                                 -webkit-border-radius: 72px;
-                                -moz-border-radius: 72px;
-                                border-radius: 72px;
-                                float: left;
-                                width: 72px;
-                                height: 72px;
-                                display: block;
-                                margin: 0 5px 0 0;
+								-moz-border-radius: 72px;
+								border-radius: 72px;
+								float: left;
+								width: 72px;
+								z-index: 250;
+								height: 72px;
+								display: block;
+								margin: 0 7px 0 0;
+								position: relative;
                             }
+								#hlv-block-f .hlv-block-content-split-right li span:before {
+									-webkit-border-radius: 50%;
+									-moz-border-radius: 50%;
+									border-radius: 50%;
+									top: -3px;
+									left: -3px;
+									opacity: 0;
+									z-index: 10;
+									content: '';
+									width: 100%;
+									height: 100%;
+									position: absolute;
+									transform: rotate(45deg);
+									border-top: 3px solid #99c582;
+									border-right: 3px solid #479d45;
+									border-bottom: 3px solid #99c582;
+									border-left: 3px solid #479d45;
+									transition: all 250ms ease-in-out;
+								}
+									#hlv-block-f:hover .hlv-block-content-split-right li span:before {
+										opacity: 1;
+										animation-delay: 350ms;
+										animation-duration: 10s;
+										animation-iteration-count: infinite;
+									}
+								#hlv-block-f .hlv-block-content-split-right li span:after {
+									-webkit-border-radius: 50%;
+									-moz-border-radius: 50%;
+									border-radius: 50%;
+									top: -3px;
+									left: -3px;
+									opacity: 0;
+									z-index: 20;
+									content: '';
+									width: 100%;
+									height: 100%;
+									position: absolute;
+									transform: rotate(45deg);
+									border: 3px dashed #479d45;
+								}
+									#hlv-block-f:hover .hlv-block-content-split-right li span:after {
+										opacity: 1;
+										transition: all 250ms ease-in-out;
+										transition-delay: 450ms;
+									}
                             #hlv-block-f .hlv-block-content-split-right li h5 {
                                 color: #767676;
                                 font-size: 18px;
@@ -586,7 +764,26 @@
                                 padding: 0 40px 0 0;
                             }
                         /* UNIBET */
-                        #hlv-unibet-markov {}
+                        #hlv-unibet-markov {
+							position: relative;
+						}
+							#hlv-block-f #hlv-unibet-markov:after {
+								-webkit-transition: height 250ms ease-in-out;
+								-moz-transition: height 250ms ease-in-out;
+								-o-transition: height 250ms ease-in-out;
+								transition: height 250ms ease-in-out;
+								top: 50%;
+								left: 36px;
+								width: 3px;
+								height: 0;
+								content: '';
+								position: absolute;
+								background: #479d45;
+								transition-delay: 25ms;
+							}
+								#hlv-block-f:hover #hlv-unibet-markov:after {
+									height: 72px;
+								}
                             #hlv-unibet-markov span {
                                 background: url("../img/hooloovoo-unibet-marko-kovacevic.png") top center no-repeat;
                                 -webkit-background-size: cover;
@@ -594,7 +791,44 @@
                                 -o-background-size: cover;
                                 background-size: cover;
                             }
-                        #hlv-unibet-brajov {}
+								#hlv-block-f #hlv-unibet-markov span:before {
+									transition-delay: 200ms;
+								}
+									#hlv-block-f:hover #hlv-unibet-markov span:before {
+										animation-name: hlv-roto-unibet-one;
+										transition-delay: 0ms;
+									}
+									@keyframes hlv-roto-unibet-one {
+										0% {
+											transform: rotate(46deg);
+										}
+										11% {
+											transform: rotate(406deg);
+										}
+										19% {
+											transform: rotate(-91deg);
+										}
+										51% {
+											transform: rotate(906deg);
+										}
+										89% {
+											transform: rotate(-46deg);
+										}
+										100% {
+											transform: rotate(46deg);
+										}
+									}
+								#hlv-block-f #hlv-unibet-markov span:after {
+									transition-delay: 200ms;
+								}
+									#hlv-block-f:hover #hlv-unibet-markov span:after {
+										transition-delay: 0ms;
+									}
+                        #hlv-unibet-brajov {
+							position: relative;
+						}
+							#hlv-unibet-brajov:after {}
+								#hlv-block-f:hover #hlv-unibet-brajov:after {}
                             #hlv-unibet-brajov span {
                                 background: url("../img/hooloovoo-unibet-branko-jovicic.png") top center no-repeat;
                                 -webkit-background-size: cover;
@@ -602,6 +836,39 @@
                                 -o-background-size: cover;
                                 background-size: cover;
                             }
+								#hlv-block-f #hlv-unibet-brajov span:before {
+									transition-delay: 0ms;
+								}
+									#hlv-block-f:hover #hlv-unibet-brajov span:before {
+										animation-name: hlv-roto-unibet-two;
+										transition-delay: 100ms;
+									}
+									@keyframes hlv-roto-unibet-two {
+										0% {
+											transform: rotate(-42deg);
+										}
+										15% {
+											transform: rotate(620deg);
+										}
+										20% {
+											transform: rotate(-93deg);
+										}
+										50% {
+											transform: rotate(945deg);
+										}
+										90% {
+											transform: rotate(-155deg);
+										}
+										100% {
+											transform: rotate(-42deg);
+										}
+									}
+								#hlv-block-f #hlv-unibet-brajov span:after {
+									transition-delay: 0ms;
+								}
+									#hlv-block-f:hover #hlv-unibet-brajov span:after {
+										transition-delay: 150ms;
+								}
                         /* /UNIBET */
 /* /Block F */
 
@@ -2807,7 +3074,14 @@
 	}
 
 	/* 1050px/1189px =  744px */
-	@media screen and (min-width: 1050px) and (max-width: 1189px) {}
+	@media screen and (min-width: 1050px) and (max-width: 1189px) {
+		#hlv {
+			width: 744px;
+		}
+			#hlv div.hlv-block {
+				width: 720px;
+			}
+	}
 
 	/* 1190px/1199px =  849px */
 	@media screen and (min-width: 1190px) and (max-width: 1199px) {}
