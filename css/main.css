@@ -479,7 +479,7 @@
 								transition-delay: 0ms;
 							}
 						#hlv-feis-darmak span {
-							background: url("../img/hooloovoo-feis-darko-maksimovic.png") top center no-repeat;
+							background: url("../img/hooloovoo-feis-darko-maksimovic.jpg") top center no-repeat;
 							-webkit-background-size: cover;
 							-moz-background-size: cover;
 							-o-background-size: cover;
@@ -526,7 +526,7 @@
 								transition-delay: 250ms;
 							}
                         #hlv-feis-sreant span {
-                            background: url("../img/hooloovoo-feis-sreten-antic.png") top center no-repeat;
+                            background: url("../img/hooloovoo-feis-sreten-antic.jpg") top center no-repeat;
                             -webkit-background-size: cover;
                             -moz-background-size: cover;
                             -o-background-size: cover;
@@ -568,7 +568,7 @@
 						#hlv-feis-tomtom:after {}
 							#hlv-block-c:hover #hlv-feis-tomtom:after {}
 						#hlv-feis-tomtom span {
-							background: url("../img/hooloovoo-feis-tomislav-tomcic.png") top center no-repeat;
+							background: url("../img/hooloovoo-feis-tomislav-tomcic.jpg") top center no-repeat;
 							-webkit-background-size: cover;
 							-moz-background-size: cover;
 							-o-background-size: cover;
@@ -785,7 +785,7 @@
 									height: 72px;
 								}
                             #hlv-unibet-markov span {
-                                background: url("../img/hooloovoo-unibet-marko-kovacevic.png") top center no-repeat;
+                                background: url("../img/hooloovoo-unibet-marko-kovacevic.jpg") top center no-repeat;
                                 -webkit-background-size: cover;
                                 -moz-background-size: cover;
                                 -o-background-size: cover;
@@ -830,7 +830,7 @@
 							#hlv-unibet-brajov:after {}
 								#hlv-block-f:hover #hlv-unibet-brajov:after {}
                             #hlv-unibet-brajov span {
-                                background: url("../img/hooloovoo-unibet-branko-jovicic.png") top center no-repeat;
+                                background: url("../img/hooloovoo-unibet-branko-jovicic.jpg") top center no-repeat;
                                 -webkit-background-size: cover;
                                 -moz-background-size: cover;
                                 -o-background-size: cover;
@@ -983,100 +983,100 @@
     }
     @keyframes blast-of-past {
         0% {
-            background: url("../img/hlv-bg-block-promise-amigkeyboard.png") top center no-repeat;
-            background-size: 303px 189px;
+            background: url("../img/hlv-bg-block-promise-sprites.png") -5px 0 no-repeat;
+            background-size: 939px 776px;
         }
-            8.29% {
-                background: url("../img/hlv-bg-block-promise-amigkeyboard.png") top center no-repeat;
-                background-size: 303px 189px;
+            8.299% {
+                background: url("../img/hlv-bg-block-promise-sprites.png") -5px 0 no-repeat;
+                background-size: 939px 776px;
             }
         8.3% {
-            background: url("../img/hlv-bg-block-promise-tablefootball.png") top center no-repeat;
-            background-size: 303px 189px;
+            background: url("../img/hlv-bg-block-promise-sprites.png") -313px -582px no-repeat;
+			background-size: 939px 776px;
         }
-            16.59% {
-                background: url("../img/hlv-bg-block-promise-tablefootball.png") top center no-repeat;
-                background-size: 303px 189px;
+            16.599% {
+                background: url("../img/hlv-bg-block-promise-sprites.png") -313px -582px no-repeat;
+                background-size: 939px 776px;
             }
         16.6% {
-            background: url("../img/hlv-bg-block-promise-beach.png") top center no-repeat;
-            background-size: 303px 189px;
+            background: url("../img/hlv-bg-block-promise-sprites.png") -313px 0 no-repeat;
+            background-size: 939px 776px;
         }
-            24.89% {
-                background: url("../img/hlv-bg-block-promise-beach.png") top center no-repeat;
-                background-size: 303px 189px;
+            24.899% {
+                background: url("../img/hlv-bg-block-promise-sprites.png") -313px 0 no-repeat;
+            	background-size: 939px 776px;
             }
         24.9% {
-            background: url("../img/hlv-bg-block-promise-playstation4pro.png") top center no-repeat;
-            background-size: 303px 189px;
+            background: url("../img/hlv-bg-block-promise-sprites.png") -313px -388px no-repeat;
+            background-size: 939px 776px;
         }
-            33.19% {
-                background: url("../img/hlv-bg-block-promise-playstation4pro.png") top center no-repeat;
-                background-size: 303px 189px;
+            33.199% {
+                background: url("../img/hlv-bg-block-promise-sprites.png") -313px -388px no-repeat;
+            	background-size: 939px 776px;
             }
         33.2% {
-            background: url("../img/hlv-bg-block-promise-bttfdelorean.png") top center no-repeat;
-            background-size: 303px 189px;
+            background: url("../img/hlv-bg-block-promise-sprites.png") -5px -194px no-repeat;
+            background-size: 939px 776px;
         }
-            41.49% {
-                background: url("../img/hlv-bg-block-promise-bttfdelorean.png") top center no-repeat;
-                background-size: 303px 189px;
+            41.499% {
+                background: url("../img/hlv-bg-block-promise-sprites.png") -5px -194px no-repeat;
+            	background-size: 939px 776px;
             }
         41.5% {
-            background: url("../img/hlv-bg-block-promise-suitcase.png") top center no-repeat;
-            background-size: 303px 189px;
+            background: url("../img/hlv-bg-block-promise-sprites.png") -5px -582px no-repeat;
+            background-size: 939px 776px;
         }
-            49.79% {
-                background: url("../img/hlv-bg-block-promise-suitcase.png") top center no-repeat;
-                background-size: 303px 189px;
+            49.799% {
+                background: url("../img/hlv-bg-block-promise-sprites.png") -5px -582px no-repeat;
+            	background-size: 939px 776px;
             }
         49.8% {
-            background: url("../img/hlv-bg-block-promise-gibsonlespaul.png") top center no-repeat;
-            background-size: 303px 189px;
+            background: url("../img/hlv-bg-block-promise-sprites.png") -621px -194px no-repeat;
+            background-size: 939px 776px;
         }
-            58.09% {
-                background: url("../img/hlv-bg-block-promise-gibsonlespaul.png") top center no-repeat;
-                background-size: 303px 189px;
+            58.099% {
+                background: url("../img/hlv-bg-block-promise-sprites.png") -621px -194px no-repeat;
+            	background-size: 939px 776px;
             }
         58.1% {
-            background: url("../img/hlv-bg-block-promise-pc.png") top center no-repeat;
-            background-size: 303px 189px;
+            background: url("../img/hlv-bg-block-promise-sprites.png") -5px -388px no-repeat;
+            background-size: 939px 776px;
         }
-            66.39% {
-                background: url("../img/hlv-bg-block-promise-pc.png") top center no-repeat;
-                background-size: 303px 189px;
+            66.399% {
+                background: url("../img/hlv-bg-block-promise-sprites.png") -5px -388px no-repeat;
+            	background-size: 939px 776px;
             }
         66.4% {
-            background: url("../img/hlv-bg-block-promise-boxershorts.png") top center no-repeat;
-            background-size: 303px 189px;
+            background: url("../img/hlv-bg-block-promise-sprites.png") -621px 0 no-repeat;
+            background-size: 939px 776px;
         }
-            74.69% {
-                background: url("../img/hlv-bg-block-promise-boxershorts.png") top center no-repeat;
-                background-size: 303px 189px;
+            74.699% {
+                background: url("../img/hlv-bg-block-promise-sprites.png") -621px 0 no-repeat;
+            	background-size: 939px 776px;
             }
         74.7% {
-            background: url("../img/hlv-bg-block-promise-tabletennis.png") top center no-repeat;
-            background-size: 303px 189px;
+            background: url("../img/hlv-bg-block-promise-sprites.png") -621px -582px no-repeat;
+            background-size: 939px 776px;
         }
-            82.99% {
-                background: url("../img/hlv-bg-block-promise-tabletennis.png") top center no-repeat;
-                background-size: 303px 189px;
+            82.999% {
+                background: url("../img/hlv-bg-block-promise-sprites.png") -621px -582px no-repeat;
+            	background-size: 939px 776px;
             }
         83% {
-            background: url("../img/hlv-bg-block-promise-sonywalkman.png") top center no-repeat;
-            background-size: 303px 189px;
+            background: url("../img/hlv-bg-block-promise-sprites.png") -621px -388px no-repeat;
+            background-size: 939px 776px;
         }
-            91.29% {
-                background: url("../img/hlv-bg-block-promise-sonywalkman.png") top center no-repeat;
-                background-size: 303px 189px;
+            91.299% {
+                background: url("../img/hlv-bg-block-promise-sprites.png") -621px -388px no-repeat;
+            	background-size: 939px 776px;
             }
         91.3% {
-            background: url("../img/hlv-bg-block-promise-comfychair.png") top center no-repeat;
-            background-size: 303px 189px;
+            background: url("../img/hlv-bg-block-promise-sprites.png") -313px -194px no-repeat;
+            background-size: 939px 776px;
         }
             100% {
-                background: url("../img/hlv-bg-block-promise-comfychair.png") top center no-repeat;
-                background-size: 303px 189px;
+                background: url("../img/hlv-bg-block-promise-sprites.png") -313px -194px no-repeat;
+            	background-size: 939px 776px;
             }
     }
     #hlv-block-j .hlv-block {}
