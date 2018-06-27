@@ -59,8 +59,11 @@
     line-height: 1;
 }
 
-    #hlv h1, #hlv h2, #hlv h3, #hlv h4, #hlv h5, #hlv h6 {
+    div#hlv h1, div#hlv h2, div#hlv h3, div#hlv h4, div#hlv h5, div#hlv h6 {
+		border: none;
         font-weight: 200;
+		text-align: left;
+		line-height: normal;
         text-transform: uppercase;
         font-family: 'Oswald', sans-serif;
     }
@@ -654,7 +657,7 @@
 
 /* Block E */
 #hlv-block-e {
-    /*height: 656px;*/
+    height: 656px;
     background: url("../img/hlv-bg-block-e.jpg") top center no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -685,7 +688,7 @@
                         width: 203px;
                         height: 292px;
                         position: absolute;
-                        background: url("../img/hlv-bg-block-f.png");
+                        background: url("../img/hlv-bg-block-f.svg");
                         background-size: 203px 292px;
                     }
                     #hlv-block-f .hlv-block-content-split-left h2 {
@@ -953,6 +956,7 @@
                         color: #FFFFFF;
                         font-size: 34px;
                         padding: 0 0 38px 0;
+						font-weight: normal;
                     }
                         #hlv-block-h .hlv-block-content-split-right h3 span {
                             display: block;
@@ -2341,7 +2345,7 @@
 								width: 175px;
 								height: 252px;
 								position: absolute;
-								background: url("../img/hlv-bg-block-f.png");
+								background: url("../img/hlv-bg-block-f.svg");
 								background-size: 175px 252px;
 							}
 							#hlv-block-f .hlv-block-content-split-left h2 {}
@@ -2764,7 +2768,7 @@
 								width: 175px;
 								height: 252px;
 								position: absolute;
-								background: url("../img/hlv-bg-block-f.png");
+								background: url("../img/hlv-bg-block-f.svg");
 								background-size: 175px 252px;
 							}
 							#hlv-block-f .hlv-block-content-split-left h2 {}
@@ -2982,7 +2986,7 @@
 								width: 175px;
 								height: 252px;
 								position: absolute;
-								background: url("../img/hlv-bg-block-f.png");
+								background: url("../img/hlv-bg-block-f.svg");
 								background-size: 175px 252px;
 							}
 							#hlv-block-f .hlv-block-content-split-left h2 {}
