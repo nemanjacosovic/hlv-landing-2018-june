@@ -3280,10 +3280,11 @@
 	}
 
 	/* 1920px/2559px = 1191px */
-	@media screen and (min-width: 1920px) and (max-width: 2559px) {}
-
-	/* 2560px ... */
-	@media screen and (min-width: 2560px) {}
+	@media screen and (min-width: 1921px) {
+		#hlv-block-c .hlv-block-content-split-left h2:before {
+			left: -9999%;
+		}
+	}
 
 /* /Desktop */
 /* /Responsive */
