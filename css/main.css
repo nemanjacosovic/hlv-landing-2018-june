@@ -475,6 +475,7 @@
                             font-size: 13px;
                             line-height: 1.2em;
                             padding: 0 40px 0 0;
+							margin: 0 0 0 79px;
                         }
                             #hlv-block-c .hlv-block-content-split-right li p em {
                                 display: block;
@@ -1166,6 +1167,7 @@
 						font-size: 16px;
 						line-height: 1.2em;
 						padding: 0 18px 0 0;
+						margin: 0 0 0 101px;
 					}
 				/* Benefits */
 				#hlv-block-k #hlv-benefits-salary {}
@@ -1446,8 +1448,8 @@
 						#hlv-block-f .hlv-block-content-split-left {}
 							#hlv-block-f .hlv-block-content-split-left:before {
 								top: auto;
-								right: 0;
-								bottom: -670px;
+								right: 20px;
+								bottom: -750px;
 								left: auto;
 							}
 							#hlv-block-f .hlv-block-content-split-left h2 {}
@@ -1777,7 +1779,7 @@
 					#hlv-block-f .hlv-block-content-split {}
 						#hlv-block-f .hlv-block-content-split-left {}
 							#hlv-block-f .hlv-block-content-split-left:before {
-								bottom: -620px;
+								bottom: -680px;
 							}
 							#hlv-block-f .hlv-block-content-split-left h2 {}
 							#hlv-block-f .hlv-block-content-split-left p {}
