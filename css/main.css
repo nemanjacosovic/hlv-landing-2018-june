@@ -789,6 +789,7 @@
                             #hlv-block-f .hlv-block-content-split-right li p {
                                 color: #767676;
                                 font-size: 13px;
+								margin: 0 0 0 79px;
                                 line-height: 1.2em;
                                 padding: 0 40px 0 0;
                             }
